@@ -50,7 +50,7 @@ public class TrecParser implements Parser {
         File [] files = file.listFiles();
         for (File f : files) {
             String name = f.getName();
-            if (!f.isDirectory() && name.contains("shakespeare-merchant"))
+            if (!f.isDirectory() && name.contains(".gz"))
                 fileQueue.add(f);
         }
     }
